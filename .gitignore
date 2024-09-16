@@ -3,3 +3,5 @@ bazel-out
 bazel-testlogs
 bazel-bazel-diff-bzlmod-repro
 MODULE.bazel.lock
+*.hashes
+impacted-targets
