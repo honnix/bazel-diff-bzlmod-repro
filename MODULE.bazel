@@ -1,0 +1,10 @@
+bazel_dep(name = "rules_python", version = "0.35.0")
+
+PYTHON_VERSION = "3.12"
+
+python = use_extension("@rules_python//python/extensions:python.bzl", "python")
+python.toolchain(
+    ignore_root_user_error = True,
+    is_default = True,
+    python_version = PYTHON_VERSION,
+)
